@@ -5,15 +5,21 @@
 //  Created by Vladimir Dvornikov on 10.10.2022.
 //
 
-import UIKit
+import Spring
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var animationView: SpringView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        animationView.layer.cornerRadius = 10
     }
-
-
+    
+    @IBAction func startButtonPressed(_ sender: SpringButton) {
+    }
+    
+    
 }
 
