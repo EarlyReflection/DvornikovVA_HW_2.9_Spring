@@ -8,10 +8,11 @@
 import Spring
 
 class ViewController: UIViewController {
+    
 
     @IBOutlet weak var animationView: SpringView!
-    @IBOutlet weak var startButton: SpringButton!
-    
+    @IBOutlet weak var animationLabel: UILabel!
+    @IBOutlet weak var startButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,11 +20,17 @@ class ViewController: UIViewController {
     }
     
     @IBAction func startButtonPressed(_ sender: SpringButton) {
-        animationView.animation = "shake"
+        
+        let animation = Animation.getAnimation()
+        
+        animationView.animation = animation.name
+        animationView.curve = animation.curve
         animationView.force = 0.5
         animationView.duration = 1
-        animationView.curve = "linear"
         animationView.animate()
+        
+        animationLabel.text = "preset: \(animation.name), curve: \(animation.curve)"
+        startButton.setTitle(animation.name, for: .normal)
     }
 }
 
