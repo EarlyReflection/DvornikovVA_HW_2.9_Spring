@@ -32,11 +32,9 @@
                                     <constraint firstItem="dwr-5I-Aps" firstAttribute="centerX" secondItem="9GJ-0L-t6Y" secondAttribute="centerX" id="QNi-eR-Ef0"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="pop"/>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
-                                        <real key="value" value="3"/>
-                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="nil" keyPath="animation"/>
+                                    <userDefinedRuntimeAttribute type="nil" keyPath="autostart"/>
+                                    <userDefinedRuntimeAttribute type="nil" keyPath="duration"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7BC-0D-Orm" customClass="SpringButton" customModule="Spring">
@@ -74,6 +72,7 @@
                     </view>
                     <connections>
                         <outlet property="animationView" destination="9GJ-0L-t6Y" id="pK2-cS-mi7"/>
+                        <outlet property="startButton" destination="7BC-0D-Orm" id="kia-9w-DrW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

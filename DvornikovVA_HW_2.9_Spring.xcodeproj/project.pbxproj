@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0CD342EDCC8B82BBBDB2FAEF /* Pods_DvornikovVA_HW_2_9_SpringTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76A61BE20056E0E15A67AAB /* Pods_DvornikovVA_HW_2_9_SpringTests.framework */; };
 		BE4F85B676E6A08A40E864FA /* Pods_DvornikovVA_HW_2_9_Spring_DvornikovVA_HW_2_9_SpringUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A62079B7333857759CBF937D /* Pods_DvornikovVA_HW_2_9_Spring_DvornikovVA_HW_2_9_SpringUITests.framework */; };
+		D1B8ECEE28F9C80200D032EB /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B8ECED28F9C80200D032EB /* Animation.swift */; };
+		D1B8ECF128F9C9DF00D032EB /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B8ECF028F9C9DF00D032EB /* DataManager.swift */; };
 		D1DFCEB328F475A500BF4DD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DFCEB228F475A500BF4DD1 /* AppDelegate.swift */; };
 		D1DFCEB528F475A500BF4DD1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DFCEB428F475A500BF4DD1 /* SceneDelegate.swift */; };
 		D1DFCEB728F475A500BF4DD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DFCEB628F475A500BF4DD1 /* ViewController.swift */; };
@@ -45,6 +47,8 @@
 		A62079B7333857759CBF937D /* Pods_DvornikovVA_HW_2_9_Spring_DvornikovVA_HW_2_9_SpringUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DvornikovVA_HW_2_9_Spring_DvornikovVA_HW_2_9_SpringUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B51F4CB1EBCC189D2B13C4C1 /* Pods-DvornikovVA_HW_2.9_Spring.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DvornikovVA_HW_2.9_Spring.debug.xcconfig"; path = "Target Support Files/Pods-DvornikovVA_HW_2.9_Spring/Pods-DvornikovVA_HW_2.9_Spring.debug.xcconfig"; sourceTree = "<group>"; };
 		C8BCA3528E9A5A6ABC02948E /* Pods-DvornikovVA_HW_2.9_Spring.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DvornikovVA_HW_2.9_Spring.release.xcconfig"; path = "Target Support Files/Pods-DvornikovVA_HW_2.9_Spring/Pods-DvornikovVA_HW_2.9_Spring.release.xcconfig"; sourceTree = "<group>"; };
+		D1B8ECED28F9C80200D032EB /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
+		D1B8ECF028F9C9DF00D032EB /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		D1DFCEAF28F475A500BF4DD1 /* DvornikovVA_HW_2.9_Spring.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DvornikovVA_HW_2.9_Spring.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1DFCEB228F475A500BF4DD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1DFCEB428F475A500BF4DD1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,8 +105,15 @@
 				F6BD27D10419114F434B3740 /* Pods-DvornikovVA_HW_2.9_SpringTests.debug.xcconfig */,
 				DD154C89A77A886069526D3C /* Pods-DvornikovVA_HW_2.9_SpringTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		D1B8ECEF28F9C99C00D032EB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D1B8ECED28F9C80200D032EB /* Animation.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		D1DFCEA628F475A500BF4DD1 = {
@@ -137,6 +148,8 @@
 				D1DFCEBB28F475A600BF4DD1 /* Assets.xcassets */,
 				D1DFCEBD28F475A600BF4DD1 /* LaunchScreen.storyboard */,
 				D1DFCEC028F475A600BF4DD1 /* Info.plist */,
+				D1B8ECEF28F9C99C00D032EB /* Models */,
+				D1B8ECF028F9C9DF00D032EB /* DataManager.swift */,
 			);
 			path = DvornikovVA_HW_2.9_Spring;
 			sourceTree = "<group>";
@@ -408,7 +421,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1DFCEB728F475A500BF4DD1 /* ViewController.swift in Sources */,
+				D1B8ECF128F9C9DF00D032EB /* DataManager.swift in Sources */,
 				D1DFCEB328F475A500BF4DD1 /* AppDelegate.swift in Sources */,
+				D1B8ECEE28F9C80200D032EB /* Animation.swift in Sources */,
 				D1DFCEB528F475A500BF4DD1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

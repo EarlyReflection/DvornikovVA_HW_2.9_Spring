@@ -10,6 +10,7 @@ import Spring
 class ViewController: UIViewController {
 
     @IBOutlet weak var animationView: SpringView!
+    @IBOutlet weak var startButton: SpringButton!
     
     
     override func viewDidLoad() {
@@ -18,8 +19,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func startButtonPressed(_ sender: SpringButton) {
+        animationView.animation = "shake"
+        animationView.force = 0.5
+        animationView.duration = 1
+        animationView.curve = "linear"
+        animationView.animate()
     }
-    
-    
 }
 
