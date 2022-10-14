@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var animationView: SpringView!
     @IBOutlet weak var animationLabel: UILabel!
-    @IBOutlet weak var startButton: UIButton!
+    @IBOutlet weak var startButton: SpringButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     @IBAction func startButtonPressed(_ sender: SpringButton) {
         
         let animation = Animation.getAnimation()
-        
+ 
         animationView.animation = animation.name
         animationView.curve = animation.curve
         animationView.force = CGFloat(animation.force)

@@ -17,12 +17,12 @@ struct Animation {
         
         let dataManager = DataManager.shared
         
-        let randomAnimation = Animation(
+        let animation = Animation(
             name: dataManager.names.randomElement() ?? "shake",
             curve: dataManager.curves.randomElement() ?? "linear",
             duration: Float.random(in: 0.1 ... 3.0),
             force: Float.random(in: 0.5 ... 2.0))
         
-        return randomAnimation
+        return animation
     }    
 }
