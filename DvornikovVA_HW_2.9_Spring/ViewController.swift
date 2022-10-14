@@ -9,7 +9,7 @@ import Spring
 
 class ViewController: UIViewController {
     
-
+    
     @IBOutlet weak var animationView: SpringView!
     @IBOutlet weak var animationLabel: UILabel!
     @IBOutlet weak var startButton: UIButton!
@@ -25,11 +25,16 @@ class ViewController: UIViewController {
         
         animationView.animation = animation.name
         animationView.curve = animation.curve
-        animationView.force = 0.5
-        animationView.duration = 1
+        animationView.force = CGFloat(animation.force)
+        animationView.duration = CGFloat(animation.duration)
         animationView.animate()
         
-        animationLabel.text = "preset: \(animation.name), curve: \(animation.curve)"
+        animationLabel.text = """
+preset: \(animation.name)
+curve: \(animation.curve)
+force: \(animation.force)
+duration: \(animation.duration)
+"""
         startButton.setTitle(animation.name, for: .normal)
     }
 }
