@@ -17,8 +17,8 @@ struct Animation {
         """
         preset: \(name)
         curve: \(curve)
-        force: \(force)
-        duration: \(duration)
+        force: \(String(format: "%.01f",force))
+        duration: \(String(format: "%.01f",duration))
         """
     }
     
@@ -29,7 +29,7 @@ struct Animation {
         let animation = Animation(
             name: dataManager.names.randomElement() ?? "shake",
             curve: dataManager.curves.randomElement() ?? "linear",
-            duration: Float.random(in: 0.1 ... 3.0),
+            duration: Float.random(in: 0.5 ... 3.0),
             force: Float.random(in: 0.5 ... 2.0)
         )
         

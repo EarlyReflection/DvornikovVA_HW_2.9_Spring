@@ -116,21 +116,21 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		D1B8ECF228F9EFF000D032EB /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				D1DFCEB828F475A500BF4DD1 /* Main.storyboard */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		D1B8ECF328F9F84C00D032EB /* Controllers */ = {
+		D1B8ECF228F9EFF000D032EB /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				D1DFCEB628F475A500BF4DD1 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D1B8ECF328F9F84C00D032EB /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D1DFCEB828F475A500BF4DD1 /* Main.storyboard */,
 				D1DFCEBD28F475A600BF4DD1 /* LaunchScreen.storyboard */,
 			);
-			path = Controllers;
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		D1DFCEA628F475A500BF4DD1 = {
@@ -158,10 +158,9 @@
 		D1DFCEB128F475A500BF4DD1 /* DvornikovVA_HW_2.9_Spring */ = {
 			isa = PBXGroup;
 			children = (
-				D1DFCEB228F475A500BF4DD1 /* AppDelegate.swift */,
-				D1DFCEB428F475A500BF4DD1 /* SceneDelegate.swift */,
-				D1B8ECF228F9EFF000D032EB /* Views */,
-				D1B8ECF328F9F84C00D032EB /* Controllers */,
+				D1F043A028FC1C1A004B5D0C /* App */,
+				D1B8ECF228F9EFF000D032EB /* ViewControllers */,
+				D1B8ECF328F9F84C00D032EB /* Storyboards */,
 				D1DFCEBB28F475A600BF4DD1 /* Assets.xcassets */,
 				D1DFCEC028F475A600BF4DD1 /* Info.plist */,
 				D1B8ECEF28F9C99C00D032EB /* Models */,
@@ -185,6 +184,15 @@
 				D1DFCED528F475A600BF4DD1 /* DvornikovVA_HW_2_9_SpringUITestsLaunchTests.swift */,
 			);
 			path = DvornikovVA_HW_2.9_SpringUITests;
+			sourceTree = "<group>";
+		};
+		D1F043A028FC1C1A004B5D0C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D1DFCEB228F475A500BF4DD1 /* AppDelegate.swift */,
+				D1DFCEB428F475A500BF4DD1 /* SceneDelegate.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 		FC8B67630FE28E9B138B48E4 /* Frameworks */ = {

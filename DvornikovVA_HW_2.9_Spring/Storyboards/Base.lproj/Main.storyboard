@@ -17,21 +17,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9GJ-0L-t6Y" customClass="SpringView" customModule="Spring">
-                                <rect key="frame" x="56.333333333333343" y="77" width="262.33333333333326" height="355.33333333333331"/>
+                                <rect key="frame" x="37.666666666666657" y="77" width="300" height="312"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Параметры анимации" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dwr-5I-Aps">
-                                        <rect key="frame" x="9.9999999999999858" y="167.33333333333334" width="242.33333333333331" height="20.333333333333343"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Параметры анимации" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dwr-5I-Aps">
+                                        <rect key="frame" x="22" y="123.66666666666666" width="256" height="64.666666666666657"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                         <color key="textColor" systemColor="tintColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="dwr-5I-Aps" firstAttribute="leading" secondItem="9GJ-0L-t6Y" secondAttribute="leading" constant="10" id="5TK-72-UG5"/>
+                                    <constraint firstItem="dwr-5I-Aps" firstAttribute="leading" secondItem="9GJ-0L-t6Y" secondAttribute="leading" constant="22" id="5TK-72-UG5"/>
                                     <constraint firstItem="dwr-5I-Aps" firstAttribute="centerY" secondItem="9GJ-0L-t6Y" secondAttribute="centerY" id="Nrm-zd-JYc"/>
                                     <constraint firstItem="dwr-5I-Aps" firstAttribute="centerX" secondItem="9GJ-0L-t6Y" secondAttribute="centerX" id="QNi-eR-Ef0"/>
-                                    <constraint firstAttribute="trailing" secondItem="dwr-5I-Aps" secondAttribute="trailing" constant="10" id="z4k-Xp-xPM"/>
+                                    <constraint firstAttribute="trailing" secondItem="dwr-5I-Aps" secondAttribute="trailing" constant="22" id="z4k-Xp-xPM"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="animation" value="slideLeft"/>
@@ -45,21 +45,14 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7BC-0D-Orm" customClass="SpringButton" customModule="Spring">
-                                <rect key="frame" x="127.66666666666669" y="596.33333333333337" width="120" height="60"/>
+                                <rect key="frame" x="127.66666666666669" y="564" width="120" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="i0Y-75-02J"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="rmS-gr-qTq"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" titleAlignment="center">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="START">
-                                            <attributes>
-                                                <font key="NSFont" size="29" name="Helvetica-Bold"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                <color key="tintColor" systemColor="tintColor"/>
+                                <buttonConfiguration key="configuration" style="filled" title="START" titleAlignment="center">
+                                    <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="29"/>
                                 </buttonConfiguration>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
@@ -82,10 +75,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="9GJ-0L-t6Y" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" id="3He-T6-ZHU"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9GJ-0L-t6Y" secondAttribute="bottom" multiplier="1.8" id="Ous-cI-LRY"/>
+                            <constraint firstItem="9GJ-0L-t6Y" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="3He-T6-ZHU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9GJ-0L-t6Y" secondAttribute="bottom" multiplier="2" id="Ous-cI-LRY"/>
                             <constraint firstItem="7BC-0D-Orm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kwz-7A-pH7"/>
-                            <constraint firstItem="7BC-0D-Orm" firstAttribute="top" secondItem="9GJ-0L-t6Y" secondAttribute="bottom" multiplier="1.38" id="l0x-GY-Woc"/>
+                            <constraint firstItem="7BC-0D-Orm" firstAttribute="top" secondItem="9GJ-0L-t6Y" secondAttribute="bottom" multiplier="1.45" id="l0x-GY-Woc"/>
                             <constraint firstItem="9GJ-0L-t6Y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qFE-QO-dFd"/>
                             <constraint firstItem="9GJ-0L-t6Y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="33" id="ybd-KB-kK7"/>
                         </constraints>
