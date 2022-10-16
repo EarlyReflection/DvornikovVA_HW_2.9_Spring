@@ -13,6 +13,15 @@ struct Animation {
     let duration: Float
     let force: Float
     
+    var description: String {
+        """
+        preset: \(name)
+        curve: \(curve)
+        force: \(force)
+        duration: \(duration)
+        """
+    }
+    
     static func getAnimation() -> Animation {
         
         let dataManager = DataManager.shared
@@ -21,8 +30,9 @@ struct Animation {
             name: dataManager.names.randomElement() ?? "shake",
             curve: dataManager.curves.randomElement() ?? "linear",
             duration: Float.random(in: 0.1 ... 3.0),
-            force: Float.random(in: 0.5 ... 2.0))
+            force: Float.random(in: 0.5 ... 2.0)
+        )
         
         return animation
-    }    
+    }
 }

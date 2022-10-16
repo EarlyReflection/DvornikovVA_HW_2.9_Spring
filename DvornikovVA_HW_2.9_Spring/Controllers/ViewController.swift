@@ -9,19 +9,21 @@ import Spring
 
 class ViewController: UIViewController {
     
-    
+    // MARK: - IB Outlets
     @IBOutlet weak var animationView: SpringView!
     @IBOutlet weak var animationLabel: UILabel!
-    @IBOutlet weak var startButton: SpringButton!
+
+    // MARK: - Private properties
+    private var animation = Animation.getAnimation()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         animationView.layer.cornerRadius = 10
     }
     
+    // MARK: - IB Actions
     @IBAction func startButtonPressed(_ sender: SpringButton) {
-        
-        let animation = Animation.getAnimation()
+        animationLabel.text = animation.description
  
         animationView.animation = animation.name
         animationView.curve = animation.curve
@@ -29,13 +31,8 @@ class ViewController: UIViewController {
         animationView.duration = CGFloat(animation.duration)
         animationView.animate()
         
-        animationLabel.text = """
-preset: \(animation.name)
-curve: \(animation.curve)
-force: \(animation.force)
-duration: \(animation.duration)
-"""
-        startButton.setTitle(animation.name, for: .normal)
+        animation = Animation.getAnimation()
+        sender.setTitle(animation.name, for: .normal)
     }
 }
 
